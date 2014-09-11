@@ -1,0 +1,107 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  overflow: hidden;
+  background: #e5e5e5;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #303030;
+}
+
+h1 {
+  height: 25px;
+  width: 640px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -322px;
+  margin-top: -290px;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+section {
+  display: none;
+}
+
+.bespoke-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bespoke-slide {
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  top: 50%;
+  margin-top: -240px;
+  left: 50%;
+  margin-left: -320px;
+  transition: all 1s ease;
+  transform: translate3d(0, 0, 0);
+}
+.bespoke-before {
+  transform: translate3d(-10%, 0, 0);
+}
+.bespoke-after {
+  transform: translate3d(10%, 0, 0);
+}
+
+section.bespoke-slide {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  display: block;
+}
+
+.bespoke-inactive {
+  opacity: 0;
+}
+
+.bespoke-active {
+  opacity: 1;
+}
+
+/* bespoke-backdrop styles */
+.bespoke-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 1s ease;
+  transform: translate3d(0, 0, 0);
+}
+.bespoke-backdrop-before {
+  transform: translate3d(-100%, 0, 0);
+}
+.bespoke-backdrop-after {
+  transform: translate3d(100%, 0, 0);
+}
+.bespoke-backdrop.backdrop-1 {
+  background: #f5f5f5;
+}
+.bespoke-backdrop.backdrop-2 {
+  background: #eaeaea;
+}
+.bespoke-backdrop.backdrop-3 {
+  background: #e5e5e5;
+}
+.bespoke-backdrop.backdrop-4 {
+  background: #dadada;
+}
+.bespoke-backdrop.backdrop-5 {
+  background: #d5d5d5;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bespoke-backdrop",
+  "version": "1.0.0",
+  "main": "./dist/bespoke-backdrop.js",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "bespoke.js": ">=1.0.0"
+  }
+}
